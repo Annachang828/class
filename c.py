@@ -18,8 +18,13 @@ class Student:
 
 s1 = Student('Anna', 100)
 s2 = Student('John', 60)
-print(s1.name,s1.score)
-print(s2.name,s2.score)
+students = [s1, s2]
 
-s2.study()
-print(s2.name, s2.score)
+for s in students:
+    print(s.name, '的分數是', s.score)
+
+# print(s1.name,s1.score)
+# print(s2.name,s2.score)
+
+# s2.study()
+# print(s2.name, s2.score)
